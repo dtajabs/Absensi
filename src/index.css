@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #B91C1C; /* Red-700 */
+  --color-accent: #D97706;  /* Amber-600/Gold */
+  --color-gold: #FBBF24;    /* Amber-400 */
+}
+
+body {
+  @apply font-sans bg-slate-50 text-slate-900;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-red-800 text-white px-4 py-2 rounded-lg transition-all duration-200 font-medium flex items-center justify-center gap-2;
+}
+
+.btn-gold {
+  @apply bg-accent hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-all duration-200 font-medium flex items-center justify-center gap-2;
+}
